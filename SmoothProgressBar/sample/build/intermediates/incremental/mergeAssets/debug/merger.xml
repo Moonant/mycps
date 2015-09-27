@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="unspecified" >
+        <source path="/home/ant/androidWS/hustpass2/SmoothProgressBar/sample/build/intermediates/exploded-aar/hustpass2/library/unspecified/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/ant/androidWS/hustpass2/SmoothProgressBar/sample/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/ant/androidWS/hustpass2/SmoothProgressBar/sample/src/debug/assets" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/account_padding"
+        android:paddingRight="@dimen/account_padding"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/account_name_hub" />
+
+
+        <EditText
+            android:id="@+id/hub_login_num"
+            style="@style/app_edit"
+            android:hint="学号" />
+
+        <EditText
+            android:id="@+id/hub_login_psword"
+            style="@style/app_edit"
+            android:inputType="textPassword"
+            android:hint="@string/account_psw" />
+
+        <TextView
+            android:id="@+id/hub_login_search"
+            style="@style/app_btn"
+            android:text="查询" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/app_text_small"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/account_alert_cannot_save_msg" />
+
+</RelativeLayout><!-- From: file:/home/ant/androidWS/hustpass2/hustpass2/res/layout/activity_hub_login.xml -->

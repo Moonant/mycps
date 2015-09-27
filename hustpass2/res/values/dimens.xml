@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    
+    
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="pref_item_height">42.5dp</dimen>
+    <dimen name="pref_categary_height">22dp</dimen>
+    <dimen name="pref_item_arrow_height">18dp</dimen>
+    
+    <dimen name="home_item_height">84dp</dimen>
+    <dimen name="home_item_margin_left_right">15dp</dimen>
+    <dimen name="home_item_text_margin_left">20dp</dimen>
+    <dimen name="home_item_text_margin_right">10dp</dimen>
+    <dimen name="home_item_text_key_pad_top">10dp</dimen>
+    <dimen name="home_item_text_key_pad_btm">5dp</dimen>
+    <dimen name="home_item_arrow_wh">24dp</dimen>
+    
+    <dimen name="slid_item_height">30dp</dimen>
+    <dimen name="slid_bhd_offset">62dp</dimen>
+    <dimen name="slid_abv_offset">290dp</dimen>
+    
+    <dimen name="news_item_height">85dp</dimen>
+
+    <dimen name="classroom_tab_height">80dp</dimen>
+    
+    <dimen name="announcement_item_height">65dp</dimen>
+    
+    <dimen name="score_padding_left">28dp</dimen>
+    
+    <dimen name="password_item_margin">0.3dp</dimen>
+    <dimen name="password_dot_width">21dp</dimen>
+    
+    <!-- 2.1 -->
+    
+    <dimen name="app_btn_radius">14dp</dimen>
+     <dimen name="app_btn_stroke_width">0.6sp</dimen>
+    <dimen name="btn_height">45dp</dimen>
+    
+    <dimen name="text_middle">19sp</dimen>
+    <dimen name="text_small">15sp</dimen>
+    
+    <dimen name="app_edit_radius">14sp</dimen>
+    <dimen name="app_edit_stroke_width">0.6sp</dimen>
+     <dimen name="edit_height">45dp</dimen>
+
+    <dimen name="account_padding">24dp</dimen>
+    <dimen name="account_edittext_margin">15dp</dimen>
+</resources>

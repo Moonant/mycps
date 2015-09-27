@@ -1,0 +1,43 @@
+apply plugin: 'android-library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+version = "1.3.4"
+group = "com.github.johnpersano"
+
+
+configurations {
+    archives {
+        extendsFrom configurations.default
+    }
+}
+
+buildscript{
+}
+
+
+android {
+
+	 lintOptions {  
+	      abortOnError false  
+	}
+
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+	defaultConfig {
+		minSdkVersion 8
+		targetSdkVersion 19
+	}
+
+	sourceSets {
+
+		main{
+            java.srcDirs = ['src']
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+		}
+
+	}
+
+}

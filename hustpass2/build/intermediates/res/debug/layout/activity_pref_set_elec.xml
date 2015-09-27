@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <net.bingyan.hustpass.widget.CircularSeekBar
+        android:id="@+id/seekbar_circular"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="44dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="我们将检测您的剩余电量指数，并在低于此数值时发出警报。"
+        android:textScaleX="1"
+        android:lineSpacingExtra="3dp"
+        android:textColor="#cacaca"
+        android:textSize="13sp" />
+
+</LinearLayout><!-- From: file:/home/harry/android/hustpass-2.X/hustpass2/res/layout/activity_pref_set_elec.xml -->

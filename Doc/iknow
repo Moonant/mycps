@@ -1,0 +1,87 @@
+public static class Iknow {
+
+		// public static final String IKNOWAPITOKEN = "iknowapi";
+		public static final String IKNOW_APIHOST = "http://ik.hustonline.net/";
+		public static final String IKNOW_BASE = IKNOW_APIHOST + "api/";
+		public static final String IKNOW_BASE_SSL = IKNOW_BASE;
+		// public static final String IKNOW_CATEGORIES =
+		// IKNOW_BASE+"get_categories.aspx?token="+IKNOWAPITOKEN;
+		public static final String IKNOW_ASK_LIST = IKNOW_BASE + "question/get_recent_question_list?s=%d&n=%d&t=%d&unescape=1";
+		public static final String IKNOW_GET_ANS = IKNOW_BASE + "question/get_question_info?qid=%d&mid=%d";
+		public static final String IKNOW_ADD_ASK = IKNOW_BASE_SSL + "question/ask_question";
+		public static final String IKNOW_ADD_ANS = IKNOW_BASE_SSL + "question/answer_question";
+		public static final String IKNOW_ADD_COMMENT = IKNOW_BASE_SSL + "question/comment_answer";
+		public static final String IKNOW_SET_BEST_ANS = IKNOW_BASE_SSL + "question/set_best_answer?qid=%d&aid=%d";
+		public static final String IKNOW_GET_MESSAGE = IKNOW_BASE_SSL + "message/get_user_message";
+		public static final String IKNOW_SET_MESSAGE_READED = IKNOW_BASE_SSL + "message/set_message_readuid=mid=%d";
+		public static final String IKNOW_SEARCH = IKNOW_BASE_SSL + "question/search_results?words=%s&page=%d&per_page=%d";
+		public static final String IKNOW_REG = IKNOW_BASE_SSL + "user/register";
+
+	    public static final String USER_VALIDATE = IKNOW_BASE + "user/login?u=%s&p=%s";
+
+		/**
+		 * @parm
+		 *       title->问题的标题,content->问题的内容,topclassid->问题所属的一级分类id,childclassid
+		 *       ->问题所属的二级分类id,score->问题的悬赏分
+		 * @return
+		 * @throws Exception
+		 * @throws JSONException
+		 */
+		public static JSONObject addAsk(String title, String supplement, int type_id, boolean niming, int score) throws JSONException, Exception {
+			return Iknow.restApi(IKNOW_ADD_ASK, new String[][] { { "question", title }, { "supplement", supplement }, { "score", score + "" }, { "type_id", type_id + "" },
+					{ "niming", (niming ? 1 : 0) + "" }, }, true);
+		}
+
+		/**
+		 * @parm username->回答者的用户名,content->回答的内容,askid->回答对应的问题的id
+		 * @return
+		 * @throws Exception
+		 * @throws JSONException
+		 */
+		public static JSONObject addAns(String content, int qid) throws JSONException, Exception {
+			return Iknow.restApi(IKNOW_ADD_ANS, new String[][] { { "qid", qid + "" }, { "answer", content }, }, true);
+
+		}
+		public static JSONObject addComment(String content, int aid) throws JSONException, Exception {
+			return Iknow.restApi(IKNOW_ADD_COMMENT, new String[][] { { "answer_id", aid + "" }, { "comment", content }, }, true);
+
+		}
+
+		public static JSONObject restApi(String uri, String parm[][], boolean needUserVerfi) throws Exception {
+			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+			if (parm != null)
+				for (int i = 0; i < parm.length; i++)
+					nameValuePairs.add(new BasicNameValuePair(parm[i][0], parm[i][1]));
+
+			HttpClient client;
+			if (Uri.parse(uri).getScheme().equals("https"))
+				client = new HttpsClient();
+			else
+				client = new DefaultHttpClient();
+			HttpPost request = new HttpPost(uri);
+
+			if (needUserVerfi) {
+				AccountHelper ah = AccountHelper.getIknow();
+				if(ah.isLogined()){
+					UsernamePasswordCredentials creds = new UsernamePasswordCredentials(ah.getUID()+"", ah.getAccessToken());
+					request.addHeader(new BasicScheme().authenticate(creds, request));
+				}
+			}
+			request.setEntity(new UrlEncodedFormEntity(nameValuePairs, HTTP.UTF_8));
+
+			HttpResponse response = client.execute(request);
+
+			String retSrc = EntityUtils.toString(response.getEntity());
+			client.getConnectionManager().shutdown();
+
+			return new JSONObject(retSrc);
+
+		}
+
+	}
+
+	/************/
+	// 2列
+    		int cols = getResources().getDisplayMetrics().widthPixels
+    				/ getResources().getDisplayMetrics().densityDpi;
+	/*************/

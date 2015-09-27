@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:text="抽奖码："
+        android:gravity="bottom"
+        android:textSize="24sp"
+        android:textColor="@color/text_black"/>
+
+    <TextView
+        android:id="@+id/recruit_lottery_num"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="630647"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="#f5aa3f"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/recruit_button"
+            android:background="@drawable/recruit_button_select"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="我记住了"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="欢迎来到冰岩作坊2014年秋季招新宣讲会"
+            android:textColor="@color/text_black"/>
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+<!-- From: file:/home/ant/androidWS/hustpass2/hustpass2/res/layout/activity_recruit_lottery.xml -->

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="1.3.4" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build/intermediates/exploded-aar/com.github.johnpersano/supertoasts/1.3.4/assets" />
+    </dataSet>
+    <dataSet config="unspecified" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build/intermediates/exploded-aar/hustpass2/library/unspecified/assets" />
+    </dataSet>
+    <dataSet config="21.0.0-rc1" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build/intermediates/exploded-aar/com.android.support/palette-v7/21.0.0-rc1/assets" />
+    </dataSet>
+    <dataSet config="21.0.0-rc1" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0-rc1/assets" />
+    </dataSet>
+    <dataSet config="21.0.0-rc1" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0-rc1/assets" />
+    </dataSet>
+    <dataSet config="21.0.0-rc1" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.0-rc1/assets" />
+    </dataSet>
+    <dataSet config="4.4.0" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/assets" />
+    </dataSet>
+    <dataSet config="unspecified" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build/intermediates/exploded-aar/hustpass2.libs.gesture-imageview/main/unspecified/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/assets" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/home/ant/androidWS/hustpass2/hustpass2/build-types/release/assets" />
+    </dataSet>
+
+</merger>

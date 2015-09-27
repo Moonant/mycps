@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/widget"
+        android:layout_width="292dp"
+        android:layout_height="90.7dp"
+        android:background="@drawable/widget_elec_bg"
+        android:orientation="vertical"
+        android:paddingLeft="80dp" >
+
+        <TextView
+            android:id="@+id/widget_elec_remain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="55sp" />
+
+        <TextView
+            android:id="@+id/widget_elec_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/ant/androidWS/hustpass2/hustpass2/res/layout/elec_widget.xml -->

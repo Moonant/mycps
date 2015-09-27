@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners android:radius="@dimen/app_btn_radius" />
+    <solid android:color="@color/blue"/>
+</shape>
+<!-- From: file:/home/harry/android/hustpass-2.X/hustpass2/res/drawable/app_btn_shape_blue.xml -->

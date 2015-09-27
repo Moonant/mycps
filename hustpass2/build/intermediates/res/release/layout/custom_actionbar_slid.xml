@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_sliding_menu"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <!-- back:14x21 slid:11x16 -->
+
+    <RelativeLayout
+        android:id="@+id/actionbar_title_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-100dp">
+
+        <ImageView
+            android:id="@+id/actionbar_btn_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/actionbar_back"
+            android:background="@drawable/actionbar_title_bg"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            style="@style/TextAppearance.Sherlock.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="asdas"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+        <net.bingyan.hustpass.widget.ActionbarNavigator
+            android:id="@+id/actionbar_navigiter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/actionbar_btn_back"
+            android:background="@drawable/abs__spinner_ab_default_holo_dark"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout><!-- From: file:/home/ant/androidWS/hustpass2/hustpass2/res/layout/custom_actionbar_slid.xml -->

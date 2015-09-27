@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string translatable="false"  name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+	<string translatable="false"  name="UMUpdateTitle">New version found</string>
+	<string translatable="false"  name="UMNewVersion">Latest version: </string>
+	<string translatable="false"  name="UMUpdateContent">Update Content</string>
+	<string translatable="false"  name="UMUpdateSize">Update size: </string>
+	<string translatable="false"  name="UMTargetSize">Target size: </string>
+	<string translatable="false"  name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+	<string translatable="false"  name="UMUpdateNow">Update now</string>
+	<string translatable="false"  name="UMAppUpdate">App updating</string>
+	<string translatable="false"  name="UMNotNow">Not now</string>
+	<string translatable="false"  name="UMIgnore">Ingore this</string>
+	<string translatable="false"  name="UMToast_IsUpdating">Updating....</string>
+	<string translatable="false"  name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+	<string translatable="false"  name="UMUpdateCheck">2.4.2.20140520</string>
+    
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/account_padding"
+    android:paddingRight="@dimen/account_padding">
+    <ImageView
+        style="@style/account_title_img"
+        android:src="@drawable/account_name_hub" />
+    <EditText
+        android:id="@+id/account_username"
+        style="@style/app_edit"
+        android:hint="@string/account_username" />
+
+    <EditText
+        android:id="@+id/account_psw"
+        style="@style/app_edit"
+        android:inputType="textPassword"
+        android:hint="@string/account_psw" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/account_btn_cancle"
+            style="@style/app_btn_white"
+            android:layout_width="0dp"
+            android:layout_marginRight="23dp"
+            android:layout_weight="1"
+            android:text="暂无hub帐号" />
+
+        <Button
+            android:id="@+id/account_btn_bound"
+            style="@style/app_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/account_bound" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+</LinearLayout><!-- From: file:/home/ant/androidWS/hustpass2/hustpass2/res/layout/activity_account_bound_hub.xml -->

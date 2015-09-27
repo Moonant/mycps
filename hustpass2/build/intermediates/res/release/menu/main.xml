@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+        <item 
+            android:id="@+id/actionbar_change_account"
+            android:title="切换帐号"
+            android:showAsAction="always|withText"></item>
+        <item 
+            android:id="@+id/actionbar_change_accot"
+            android:title="切换帐"
+            android:showAsAction="always|withText"></item>
+        <item 
+            android:id="@+id/actionbar_change_aunt"
+            android:title="切换号"
+            android:showAsAction="always|withText"></item>
+</menu>
+<!-- From: file:/home/ant/androidWS/hustpass2/hustpass2/res/menu/main.xml -->

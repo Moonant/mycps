@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_class_search_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <EditText
+            android:id="@+id/classroom_seach_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="请输入教室号"
+            android:textColor="#bebebe"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/classroom_seach_btn"
+            android:layout_width="81dp"
+            android:layout_height="37dp"
+            android:src="@drawable/classroom_search_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/classroom_search_detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="8.5dp"
+            android:src="@drawable/classroom_triangle_up" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="东九教学楼 A305"
+            android:textColor="#838383"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/classroom_item_section_color_1"
+            android:paddingLeft="15dp"
+            android:text="全天"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/classroom_seach_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:text="1-2节 自習"
+            android:textColor="#a3a3a3"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

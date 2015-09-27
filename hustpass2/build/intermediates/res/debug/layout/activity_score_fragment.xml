@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/score_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/score_padding_left"
+        android:text=""
+        android:textColor="#838383"
+        android:textSize="27sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/score_padding_left" >
+
+        <TextView
+            android:id="@+id/score_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textColor="#838383"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/score_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#838383"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_blue"
+        android:gravity="center"
+        >
+        <TextView
+            style="@style/app_text_middle_white"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="科目"/>
+        <TextView
+            style="@style/app_text_middle_white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="学分"/>
+        <TextView
+            style="@style/app_text_middle_white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="成绩"/>
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/score_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" >
+    </ListView>
+    <TextView
+        android:id="@id/listview_empty_tv"
+        style="@style/app_text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout><!-- From: file:/home/harry/android/hustpass-2.X/hustpass2/res/layout/activity_score_fragment.xml -->

@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <net.bingyan.hustpass.widget.SlidesViewpager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <net.bingyan.hustpass.widget.pageIndicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:paddingTop="2dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginBottom="10dp" />
+
+                <net.bingyan.hustpass.widget.GrapeGridView
+                    android:id="@+id/home_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="100dp"
+                    android:numColumns="auto_fit"
+                    android:background="@color/home_gridview_bg_grey"
+                    android:verticalSpacing="1.5dp"
+                    android:horizontalSpacing="1.5dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_blue"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:src="@drawable/home_bottom_calendar"
+                android:layout_marginRight="10dp" />
+
+
+            <TextView
+                style="@style/app_text_middle_white"
+                android:id="@+id/home_bottom_time"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阿卡简单哈"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <net.bingyan.hustpass.widget.MoveAbleImageView
+            android:id="@+id/home_wifi_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/home_wifi_normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+<!-- From: file:/home/harry/android/hustpass-2.X/hustpass2/res/layout/activity_home_activity2.xml -->

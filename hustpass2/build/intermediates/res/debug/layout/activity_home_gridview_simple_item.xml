@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.bingyan.hustpass.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_btn_bg"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/home_icon_ann" />
+
+        <TextView
+            android:id="@+id/textview"
+            style="@style/app_text_small"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/module_ann" />
+
+    </LinearLayout>
+
+</net.bingyan.hustpass.widget.SquareLayout>
+<!-- From: file:/home/harry/android/hustpass-2.X/hustpass2/res/layout/activity_home_gridview_simple_item.xml -->

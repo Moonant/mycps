@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/activity_classroom_top"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/tab">
+        <net.bingyan.hustpass.widget.pinnedHeaderListview.PinnedHeaderListView
+            android:id="@+id/classroom_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:listSelector="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/listview_empty_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/app_text_middle"
+            android:text="暂无教室数据"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/home/harry/android/hustpass-2.X/hustpass2/res/layout/activity_classroom.xml -->

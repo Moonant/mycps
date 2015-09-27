@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tag_first" type="id"/>
+
+    <string name="app_name" translatable="false">华中大校园通</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="net_error" translatable="false">请检查网络</string>
+    <string name="api_error" translatable="false">接口暂时无法使用</string>
+
+    <!-- modules name -->
+    <string name="module_ann" translatable="false">院系通知</string>
+    <string name="module_classroom" translatable="false">教室</string>
+    <string name="module_computer" translatable="false">机房</string>
+    <string name="module_elec" translatable="false">电费</string>
+    <string name="module_food" translatable="false">外卖</string>
+    <string name="module_iknow" translatable="false">iKnow</string>
+    <string name="module_lecture" translatable="false">讲座</string>
+    <string name="module_lib" translatable="false">图书馆</string>
+    <string name="module_map" translatable="false">地图</string>
+    <string name="module_news" translatable="false">新闻</string>
+    <string name="module_score" translatable="false">成绩</string>
+    <string name="module_wifi" translatable="false">校园网</string>
+    <string name="news" translatable="false">新闻</string>
+    <!-- elec -->
+    <string name="area_1" translatable="false">韵苑</string>
+    <string name="area_2" translatable="false">紫菘</string>
+    <string name="area_3" translatable="false">东区</string>
+    <string name="area_4" translatable="false">西区</string>
+    <string name="elec_enough" translatable="false">电量充足充满活力！</string>
+    <string name="elec_not_enough" translatable="false">快没电了，赶快去交电费吧！</string>
+
+    <!-- PrefActivity -->
+    <string name="setting" translatable="false">设置</string>
+    <string name="elec_alarm" translatable="false">电费警报</string>
+    <string name="net_alram" translatable="false">网费警报</string>
+    <string name="score_protect" translatable="false">成绩密码保护</string>
+    <string name="score_psword_set" translatable="false">设置成绩密码</string>
+    <string name="score_change_push" translatable="false">成绩变更通知</string>
+    <string name="wifi_auto_update" translatable="false">使用wifi时自动更新</string>
+    <string name="version_auto_update" translatable="false">自动检查版本更新</string>
+    <string name="vaersion_info" translatable="false">版本信息</string>
+    <string name="exit_hustpass" translatable="false">退出校园通</string>
+
+    <!-- homeActivity -->
+    <string name="xlistview_footer_hint_ready" translatable="false"></string>
+    <string name="xlistview_footer_hint_normal" translatable="false"></string>
+    <string name="xlistview_header_hint_loading" translatable="false"></string>
+    <string name="xlistview_header_hint_normal" translatable="false"></string>
+    <string name="xlistview_header_last_time" translatable="false"></string>
+    <string name="xlistview_header_hint_ready" translatable="false"></string>
+
+    <!-- EduNet -->
+    <string name="wifiwidget_name" translatable="false">一键校园网</string>
+    <string name="connect_time_out" translatable="false">连接超时</string>
+    <string name="net_speed_low" translatable="false">信号不够</string>
+    <string name="connect_failure" translatable="false">连接失败，请确认你现在连接的Wi-Fi为校园网</string>
+    <string name="notsupport_ipv6" translatable="false">不支持IPV6,请改用其他Wi-Fi</string>
+    <string name="wifi_not_connect" translatable="false">wifi未连接，请设置wifi状态</string>
+    <string name="account_already_logined" translatable="false">Authentication failed, because you did not log off normally in your last session, please try again!</string>
+    <string name="unauthed" translatable="false">未登录</string>
+    <string name="authed" translatable="false">已登录</string>
+    <string name="arrears" translatable="false">你的帐号已欠费,请充值</string>
+    <string name="click2login" translatable="false">按这里登录</string>
+    <string name="click2logout" translatable="false">按这里下线</string>
+    <string name="wifiunknowerror" translatable="false">发生错误,可能校园网验证已更新,请等待新版</string>
+    <string name="edunet_toast" translatable="false">校园网温馨提示:</string>
+
+    <!-- message -->
+    <string name="service_unavailable" translatable="false">服务暂时不可用</string>
+    <string name="network_unavailable" translatable="false">网路不可用,请检查网路连线</string>
+    <string name="unknownissue" translatable="false">发生错误</string>
+    <string name="loading" translatable="false">载入中,请稍候...</string>
+    <string name="logining" translatable="false">登录中,请稍候...</string>
+    <string name="logouting" translatable="false">登出中,请稍候...</string>
+    <string name="loading_more" translatable="false">载入更多</string>
+    <string name="actionok" translatable="false">操作成功</string>
+    <string name="actionfail" translatable="false">操作失败 </string>
+    <string name="updatemessage" translatable="false">最新版本:\t%1$s\n当前版本:\t%2$s\n\n点击确定下载最新版本，体验更多精彩功能！</string>
+    <string name="inputhere" translatable="false">按此输入文字</string>
+    <string name="listnoitem" translatable="false">没有内容</string>
+    <string name="listadditem" translatable="false">点这里添加新项目</string>
+    <string name="errorcode" translatable="false">错误码 : </string>
+    <string name="fillhint" translatable="false">请填写内容</string>
+    <string name="searchhint" translatable="false">请填写内容</string>
+    <string name="lastupdate" translatable="false">最近更新: </string>
+    <string name="scuccess" translatable="false">成功</string>
+    <string name="fail" translatable="false">失败 </string>
+    <string name="successin" translatable="false">成功载入%1$d个顶目 </string>
+    <string name="newestversion" translatable="false">这已是最新版本,无需更新 </string>
+    <string name="removesuccess" translatable="false">成功移除</string>
+    <string name="storge_unavailable" translatable="false">SD卡未准备好</string>
+    <string name="feedback_disabled" translatable="false">最新版本才能反馈</string>
+
+    <!-- app -->
+    <string name="app_intro" translatable="false">华中科技大学自己的官方应用</string>
+    <string name="yes" translatable="false">✓</string>
+    <string name="no" translatable="false">×</string>
+
+    <!-- account -->
+    <string name="account_login" translatable="false">登录</string>
+    <string name="account_reg" translatable="false">注册</string>
+    <string name="account_enter_without_login" translatable="false">不登录直接使用</string>
+    <string name="account_username" translatable="false">用户名</string>
+    <string name="account_account" translatable="false">帐号</string>
+    <string name="account_email" translatable="false">邮箱</string>
+    <string name="account_psw" translatable="false">密码</string>
+    <string name="account_psw_twice" translatable="false">再次输入密码</string>
+    <string name="account_bound" translatable="false">绑定</string>
+    <string name="account_input_empty_alert" translatable="false">请填写完整信息</string>
+    <string name="account_alert_cannot_save_msg" translatable="false">"此处为临时查询，如需保存帐号，请在首页右上角帐号管理绑定"</string>
+    <string name="net_error_toast">网络出错，请检查:</string>
+    <string name="title_activity_recruit_lottery">RecruitLottery</string>
+
+</resources>

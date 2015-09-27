@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@color/btn_bg_pressed"> </item>
+    <item android:drawable="@drawable/app_btn_shape_blue"></item>
+
+</selector>
+<!-- From: file:/home/ant/androidWS/hustpass2/hustpass2/res/drawable/app_btn_bg_selector.xml -->

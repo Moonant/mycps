@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/welcome_wea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_wea" 
+            
+            />
+        <ImageView
+            android:id="@+id/welcome_earth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_earth" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_man" />
+
+        <ImageView
+            android:id="@+id/welcome_woman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_woman" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="59dp"
+            android:src="@drawable/account_name_hust"/>
+         <TextView
+             style="@style/app_text_small"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="21dp"
+             android:layout_marginTop="12dp"
+             android:text="华中科技大学自己的官方应用"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/account_padding"
+            android:paddingRight="@dimen/account_padding"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/account_login"
+                style="@style/app_btn_white"
+                android:layout_width="0dp"
+                android:layout_marginRight="23dp"
+                android:layout_weight="1"
+                android:text="@string/account_login" />
+
+            <TextView
+                android:id="@+id/account_reg"
+                style="@style/app_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/account_reg" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/welcome_btn_enter_without_login"
+            style="@style/app_text_small_btn"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="21dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/account_enter_without_login"/>
+    </LinearLayout>
+
+</LinearLayout>

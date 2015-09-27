@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/app_blue" />
+
+
+</shape><!-- From: file:/home/ant/androidWS/hustpass2/hustpass2/res/drawable/classroom_top_btn_bg_r_lr.xml -->

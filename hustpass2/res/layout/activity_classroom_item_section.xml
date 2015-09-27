@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="31dp"
+    android:layout_marginTop="-1dp"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/classroom_listview_section"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:gravity="center_vertical"
+        android:text="A座"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:paddingLeft="25dp"
+        android:background="@color/classroom_item_section_color_2"/>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/app_grey"/>
+</shape><!-- From: file:/home/harry/android/hustpass-2.X/hustpass2/res/drawable/loding_image.xml -->

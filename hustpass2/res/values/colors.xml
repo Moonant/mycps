@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_bg">#5fc1f6</color> <!--  app blue #43E1F2  #4CD4E2 -->
+    <!--<color name="slid_bg">#43E1F2</color> &lt;!&ndash; app blue &ndash;&gt;-->
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#000000ff</color>
+    <color name="transparent_half">#b0000000</color>
+    
+    <color name="blue">#5fc1f6</color><!-- 2.1 <color name="blue">#51d2e1</color> -->
+    <color name="yellow">#ffdc65</color><!-- app yellow ffd133-->
+    
+    <color name="pref_text">#65827e</color>
+    <color name="pref_text_unabled">#dddddd</color>
+    <color name="pref_text_summery">#cccccc</color>
+    <color name="pref_exit_bg">#FF4B69</color>
+    <color name="pref_exit_btn">#ffffff</color>
+    <color name="pref_item_bg_pressed">#e5e5e5</color>
+    <color name="pref_seekbar_num">#51d2e1</color>
+    <color name="pref_intro_text">#cacaca</color>
+    <color name="login_hub_text">#a6a6a6</color>
+    <color name="login_hub_text_yello">#fba429</color>
+    
+
+
+    <color name="classroom_top_bg_yello">#ffdc65</color><!-- app yellow -->
+    <color name="classroom_top_text_selected">#65827e</color>
+    <color name="classroom_item_section_color_1">#ffd133</color><!-- app yellow -->
+    <color name="classroom_item_section_color_2">#5fc1f6</color> <!-- app blue -->
+    <color name="classroom_divider">#cacaca</color>
+    <color name="foodshop_item_color_blue">#5fc1f6</color> <!-- app blue -->
+    <color name="foodshop_item_color_yellow">#ffdc65</color><!-- app yellow -->
+    <color name="foodshop_text">#9e9e9e</color>
+    <color name="wifi_logout_btn">#FF4B69</color>
+    <color name="computer_tab_text">#9e9e9e</color>
+    <color name="news_item_text_color">#696969</color>
+    <color name="home_item_bg_pressed">#BDBDBD</color>
+
+    <!-- 2.1 -->
+
+    <!-- app -->
+    <color name="app_grey">#9E9E9E</color>
+    <color name="app_blue">#5fc1f6</color> <!-- app blue -->
+    <color name="app_yellow">#ffdc65</color><!-- app yellow -->
+    <color name="app_red">#FFB2B7</color>
+	
+    <!-- line img -->
+    <color name="line_grey">#DBDBDB</color>
+    
+    <!-- text color -->
+    <color name="text_grey">#9E9E9E</color>
+    <color name="text_black">#6D6D6D</color>
+
+    <!-- btn bg color -->
+    <color name="btn_bg_pressed">#9E9E9E</color>
+
+    <!--home -->
+    <color name="home_gridview_bg_grey">#E4E4E4</color>
+
+    <integer-array name="progressbar_colors">
+        <item>@color/app_blue</item>
+        <item>@color/app_yellow</item>
+    </integer-array>
+</resources>

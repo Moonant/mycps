@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@color/app_blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/line_grey" />
+
+        <net.bingyan.hustpass.widget.CircleImageView
+            android:id="@+id/user_activity_userimg"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-65dp"
+            android:padding="4dp"
+            android:background="@drawable/account_user_img_bg" />
+
+        <TextView
+            style="@style/app_text_middle_btn"
+            android:id="@+id/user_activity_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="登录通行证" />
+
+        <TextView
+            style="@style/app_text_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:text="--" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@color/line_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/account_rectangle">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/account_icon_hust"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    style="@style/app_text_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:text="HUB系统" />
+
+                <TextView
+                    android:id="@+id/account_tv_hub_uid"
+                    style="@style/app_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="U201210873" />
+
+                <ImageView
+                    android:id="@+id/account_btn_hub_bound"
+                    android:layout_width="89dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/btn_account_bounded" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="-20dp"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="4dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/account_icon_wifi"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    style="@style/app_text_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:text="校园网" />
+
+                <TextView
+                    android:id="@+id/account_tv_wifi_uid"
+                    style="@style/app_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="----------" />
+
+                <ImageView
+                    android:id="@+id/account_btn_wifi_bound"
+                    android:layout_width="89dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/btn_account_to_bound" />
+            </LinearLayout>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="-20dp"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="4dp"
+                    android:src="@drawable/account_icon_elec"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    style="@style/app_text_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:text="宿舍" />
+
+                <TextView
+                    android:id="@+id/account_tv_elec_uid"
+                    style="@style/app_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="----------" />
+
+                <ImageView
+                    android:id="@+id/account_btn_elec_bound"
+                    android:layout_width="89dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/btn_account_to_bound" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/app_text_small"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="登录后可以绑定帐号到通行证，否则帐号仅保存在本地"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="53dp"/>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/activity_slid_buttom"/>
+
+    </LinearLayout>
+</RelativeLayout>

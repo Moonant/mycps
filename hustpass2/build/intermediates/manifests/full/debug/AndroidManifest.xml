@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.bingyan.hustpass"
+    android:versionCode="71"
+    android:versionName="2.3.5" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- <uses-sdk tools:node="replace" /> -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="net.bingyan.hustpass.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5365149b56240bd7ed0b3eb5" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="all" />
+
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar" />
+        <activity android:name="net.bingyan.hustpass.ui.pref.PrefElecActivity" >
+        </activity>
+        <activity android:name="net.bingyan.hustpass.ui.pref.PrefNetActivity" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.LauncherActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.news.NewsWebViewActivity"
+            android:label="@string/module_news" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.base.WebViewActivity"
+            android:label="网页" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.lecture.LectureContentActivity"
+            android:label="@string/module_lecture" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.food.FoodShopDeatailActivity"
+            android:label="@string/module_food" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.lib.LibraryListActivity"
+            android:label="@string/module_lib" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.lib.LibraryDetailActivity"
+            android:label="@string/module_lib" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.elec.ElecDetailActivity"
+            android:label="@string/module_elec" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.pref.PrefScorePswordActivity"
+            android:label="设置" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.VersionInfoActivity"
+            android:label="版本信息" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.base.WebViewJsActivity"
+            android:label="网页" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.WelcomeActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <receiver
+            android:name="net.bingyan.hustpass.provider.WifiWidgetProvider"
+            android:label="@string/wifiwidget_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="hustpass2.edunet.action.STATUS_UPDATED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/wifi_widget" />
+        </receiver>
+        <receiver
+            android:name="net.bingyan.hustpass.provider.ElecWidgetProvider"
+            android:label="剩余电量" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="hustpass2.elec.action.STATUS_UPDATED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/elec_widget" />
+        </receiver>
+        <receiver android:name="net.bingyan.hustpass.receiver.WifiStateChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="net.bingyan.hustpass.receiver.UpdateAlarmReceiver" />
+        <receiver android:name="net.bingyan.hustpass.receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 2.1 -->
+        <activity
+            android:name="net.bingyan.hustpass.ui.HomeActivity"
+            android:label="首页"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.ann.AnnActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.classroom.ClassroomActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.compter.ComputerRoomActivity"
+            android:label="@string/module_computer" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.elec.ElectricActivity"
+            android:label="@string/module_elec"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.food.FoodActivity"
+            android:label="@string/module_food" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.iknow.IknowActivity"
+            android:label="@string/module_iknow" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.lecture.LectureActivity"
+            android:label="@string/module_lecture" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.lib.LibraryActivity"
+            android:label="@string/module_lib" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.map.MapActivity"
+            android:label="@string/module_map" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.news.NewsActivity"
+            android:label="@string/module_news" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.score.HubLoginActivity"
+            android:label="HUB登录"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.score.ScoreActivity"
+            android:label="成绩" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.module.wifi.WifiActivity"
+            android:label="校园网"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.AccountActivity"
+            android:label=""
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.UserActivity"
+            android:label="账户管理" >
+        </activity>
+        <activity
+            android:name="net.bingyan.hustpass.ui.pref.PrefActivity"
+            android:label="设置" >
+        </activity>
+
+        <service android:name="net.bingyan.hustpass.service.WifiConnectService" >
+        </service>
+
+        <!-- 招新 -->
+        <service
+            android:name="net.bingyan.hustpass.module.recruit.RecruitCheckWifi"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <receiver android:name="net.bingyan.hustpass.module.recruit.FindWifiReceiver" >
+            <intent-filter>
+                <action android:name="android.net.wifi.SCAN_RESULTS" />
+                <action android:name="net.bingyan.wifi.scan" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="net.bingyan.hustpass.module.recruit.openudid.OpenUDID_service" >
+            <intent-filter>
+                <action android:name="org.OpenUDID.GETUDID" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="net.bingyan.hustpass.module.recruit.RecruitLotteryActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
+    </application>
+
+</manifest>

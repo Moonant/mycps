@@ -1,0 +1,6 @@
+include ':libs:gesture-imageview:main', ':MyDaoGenerator', ':OkHttpTest', ':library', ':demo', ':supertoasts', ':sample'
+include ':hustpass2'
+project(':library').projectDir = new File('SmoothProgressBar/library')
+project(':demo').projectDir = new File('SuperToasts/demo')
+project(':supertoasts').projectDir = new File('SuperToasts/supertoasts')
+project(':sample').projectDir = new File('SmoothProgressBar/sample')

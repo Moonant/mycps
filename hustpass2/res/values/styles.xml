@@ -1,0 +1,196 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.Sherlock.Light.DarkActionBar"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyleNobg">@style/Widget.TabPageIndicatorNobg</item>
+        <item name="vpiTabPageIndicatorStyleBgYellow">@style/Widget.TabPageIndicatorStyleBgYellow</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+
+        <!--<item name="android:background">@color/white</item>-->
+        <!--<item name="background">@color/white</item>-->
+
+        <item name="actionBarStyle">@style/ActionbarHustpass</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">?attr/textColorPrimaryInverse</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="textColorPrimaryInverse">@color/white</item>
+
+        <item name="homeAsUpIndicator">@null</item>
+        <item name="android:homeAsUpIndicator">@null</item>
+        <!--<item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>-->
+        <!--<item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomUnderlinePageIndicator">
+        <item name="selectedColor">#51d2e1</item>
+        <item name="android:background">#FFFFFF00</item>
+        <item name="fadeLength">1000</item>
+        <item name="fadeDelay">1000</item>
+    </style>
+
+    <style name="ActionbarHustpass" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/actionbar_bg</item>
+        <item name="android:background">@color/actionbar_bg</item>
+
+    </style>
+
+    <!-- pref_activity -->
+    <style name="pref_item">
+        <item name="android:background">@drawable/pref_item_bg</item>
+    </style>
+
+    <style name="pref_divider">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:src">@drawable/pref_divider</item>
+    </style>
+
+    <style name="pref_text_key">
+        <item name="android:paddingLeft">37dp</item>
+        <item name="android:textColor">#65827e</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pref_text_summery" parent="pref_text_key">
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor"> #dddddd</item>
+    </style>
+
+    <style name="pref_arrow">
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:src">@drawable/pref_arrow</item>
+    </style>
+
+    <style name="pref_checkbox">
+        <item name="android:paddingRight">19dp</item>
+        <item name="android:button">@drawable/pref_checkbox_button</item>
+    </style>
+
+    <style name="home_text_title">
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="home_text_content">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#989898</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">3</item>
+    </style>
+
+    <style name="slid_item_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="wifi_text">
+        <item name="android:textColor">#C8C8C8</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="foodshop_text">
+        <item name="android:textColor">#9e9e9e</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="library_bookdetail_text">
+        <item name="android:textColor">#838383</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">3dp</item>
+    </style>
+
+    <style name="library_bookdetail_listitem_text">
+        <item name="android:textColor">#838383</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="password_text">
+        <item name="android:background">@drawable/password_keyboard_item_bg</item>
+        <item name="android:textColor">@color/password_keyboard_item_textcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 2.1 text -->
+    <style name="app_text">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="app_text_middle" parent="app_text">
+        <item name="android:textSize">@dimen/text_middle</item>
+    </style>
+
+    <style name="app_text_middle_btn" parent="app_text_middle">
+        <item name="android:textColor">@color/text_btn_selecter</item>
+    </style>
+
+    <style name="app_text_middle_white" parent="app_text_middle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="app_text_small" parent="app_text">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="app_text_small_blue" parent="app_text_small">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="app_text_small_btn" parent="app_text_small">
+        <item name="android:textColor">@color/text_btn_selecter</item>
+    </style>
+    
+    <!-- btn -->
+    <style name="app_btn" parent="app_text_middle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/app_btn_bg_selector</item>
+    </style>
+    <style name="app_btn_white" parent="app_btn">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:background">@drawable/app_btn_shape_white</item>
+    </style>
+    
+    <!-- edittext -->
+    <style name="app_edit" parent="app_text_middle">
+        <item name="android:textColorHint">@color/text_grey</item>
+        <item name="android:background">@drawable/app_edit_bg_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">@dimen/edit_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <!--account activity-->
+    <style name="account_alert_text" parent="app_text_small">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginTop">-10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/app_red</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="account_title_img">
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners android:radius="@dimen/app_edit_radius" />
+
+    <stroke
+        android:width="@dimen/app_edit_stroke_width"
+        android:color="@color/app_red" >
+    </stroke>
+
+    <solid android:color="@color/transparent" />
+
+</shape><!-- From: file:/home/harry/android/hustpass-2.X/hustpass2/res/drawable/app_edit_shape_red.xml -->
